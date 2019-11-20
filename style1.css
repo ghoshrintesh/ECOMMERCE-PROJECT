@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: montserrat;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  background: url(bg2.jpg) no-repeat;
+  background-size: cover;
+}
+
+.login-form{
+  width: 400px;
+  background: rgb(0, 0, 0); 
+  background: rgba(255, 255, 255, 0.5); 
+  height: 580px;
+  padding: 80px 40px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.login-form h1{
+  color: #FF0000;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.tb{
+  border-bottom: 2px solid #adadad;
+  position: relative;
+  margin: 30px 0;
+}
+
+.tb input{
+  font-size: 15px;
+  color: #333;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 0 5px;
+  height: 40px;
+}
+
+.tb span::before{
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: .5s;
+}
+
+.tb span::after{
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  transition: .5s;
+}
+
+.focus + span::before{
+  top: -5px;
+}
+.focus + span::after{
+  width: 100%;
+}
+
+.logbtn{
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: linear-gradient(120deg,#e67e22,#e74c3c,#e67e22);
+  background-size: 200%;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: .5s;
+
+
+}
+
+.logbtn:hover{
+  background-position: right;
+}
+
+.bottom-text{
+  margin-top: 60px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  color: #FF0000;
+}
+.home_text{
+  argin-top: 60px;
+  text-align: center;
+  font-size: 20px;
+  color: #FF0000;
+}
+.signup-form{
+ width: 400px;
+  background: rgb(0, 0, 0); 
+  background: rgba(255, 255, 255, 0.5); 
+  height: 620px;
+  padding: 80px 40px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.signup-form h1{
+  color: #e67e22;
+  text-align: center;
+  
+}
+.signupbtn{
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: linear-gradient(120deg,#e67e22,#e74c3c,#e67e22);
+  background-size: 200%;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.error{
+    width: 90%;
+    margin: 0px auto;
+    padding: 6px;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.dashboard{
+  width: 400px;
+  background: rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.3); 
+  height: 500px;
+  padding: 80px 40px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.dashboard h1{
+  color: #FF0000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.logbtn_home{
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 47%;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #f1f1f1;
+  background-color: #FF0000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.logbtn_home:hover {background-color: #3e8e41}
+
+.logbtn_home:active {
+  background-color: #FF0000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);}
+
+  .logbtn_home2{
+  display: inline-block;
+  position: absolute;
+  top: 70%;
+  left: 46.8%;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #f1f1f1;
+  background-color: #FF0000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.logbtn_home2:hover {background-color: #3e8e41}
+
+.logbtn_home2:active {
+  background-color: #FF0000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+  .food{
+    position: absolute;
+    top: 30.5%;
+    left: 25%;
+    font-size:50px; 
+    color: #f1f1f1;
+    
+  }
+  a:link {
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a:active {
+  color: blue;
+}
